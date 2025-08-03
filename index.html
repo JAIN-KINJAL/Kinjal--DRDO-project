@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CFESS DRDO Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f3f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #01497c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .logo-left img,
+    .logo-right img {
+      height: 60px;
+    }
+
+    .center-text {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .center-text h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .heading-line {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 2px 0;
+    }
+    .center-text .subheading {
+      font-size: 16px;
+      color: #d0d0d0;
+    }
+
+    .tab-bar {
+      background-color: #d0edf7;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tab {
+      background-color: white;
+      border: 1px solid #0077aa;
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .tab:hover {
+      background-color: #bfe7f5;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+    }
+
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0077aa;
+      color: white;
+    }
+    th:nth-child(1), td:nth-child(1){
+      width: 5%;
+    }
+
+    th:nth-child(3), td:nth-child(3) {
+      width: 15%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+      width: 40%;
+      text-align: left;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section with Logos -->
+<div class="header">
+  <div class="logo-left">
+    <img src="https://whatthelogo.com/storage/logos/drdo-official-138850.jpg" alt="Left Logo">
+  </div>
+
+  <div class="center-text">
+  <div class="heading-line">आग, विस्फोटक और पर्यावरण सुरक्षा केंद्र</div>
+  <div class="heading-line">Centre for Fire, Explosive & Environment Safety</div>
+</div>
+
+  <div class="logo-right">
+    <img src="https://whatthelogo.com/storage/logos/drdo-official-138850.jpg" alt="Right Logo">
+  </div>
+</div>
+
+<!-- Tabs -->
+<h2 class="proforma downloads">Proforma Downloads</h2>
+<div class="tab-bar">
+  <button class="tab" onclick="showTab('qrs')">QRS&IT</button>
+  <button class="tab" onclick="showTab('admin')">Admin</button>
+  <button class="tab" onclick="showTab('software')">Software</button>
+  <button class="tab" onclick="showTab('mmg')">MMG</button>
+  <button class="tab" onclick="showTab('finance')">Finance</button>
+  <button class="tab" onclick="showTab('security')">Security</button>
+  <button class="tab" onclick="showTab('tcp')">TCP & HR</button>
+  <button class="tab" onclick="showTab('tirc')">TIRC</button>
+  <button class="tab" onclick="showTab('mt')">MT</button>
+</div>
+
+<!-- Tab Contents -->
+
+<div id="qrs" class="tab-content">
+  <h2>QRS & IT Forms</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>QRS & IT Form A</td><td><a href="forms/qrs/forma.pdf" target="_blank">View</a> / <a href="forms/qrs/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>QRS & IT Form B</td><td><a href="forms/qrs/formb.pdf" target="_blank">View</a> / <a href="forms/qrs/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>QRS & IT Form C</td><td><a href="forms/qrs/formc.pdf" target="_blank">View</a> / <a href="forms/qrs/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="admin" class="tab-content">
+  <h2>Admin Forms</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>Admin Form A</td><td><a href="forms/admin/forma.pdf" target="_blank">View</a> / <a href="forms/admin/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>Admin Form B</td><td><a href="forms/admin/formb.pdf" target="_blank">View</a> / <a href="forms/admin/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>Admin Form C</td><td><a href="forms/admin/formc.pdf" target="_blank">View</a> / <a href="forms/admin/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="software" class="tab-content">
+  <h3>General Software</h3>
+  <table>
+    <tr><th>Sr. No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>Form A - Antivirus Install Guide</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+    <tr><td>2</td><td>Form B - Office Software Request</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+    <tr><td>3</td><td>Form C - Zoom/MS Teams Access</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+  </table>
+
+  <h3>Printer Drivers</h3>
+  <table>
+    <tr><th>Sr. No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>Form A - HP LaserJet Driver</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+    <tr><td>2</td><td>Form B - Canon Printer Setup</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+    <tr><td>3</td><td>Form C - Printer Connection Help</td><td><a href="forms/admin/forma.pdf"">View</a> / <a href="forms/admin/forma.pdf"">Download</a></td></tr>
+  </table>
+</div>
+
+<!-- Repeat similar for other tabs -->
+
+<div id="mmg" class="tab-content">
+  <h2>MMG</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>MMG Form A</td><td><a href="forms/mmg/forma.pdf" target="_blank">View</a> / <a href="forms/mmg/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>MMG Form B</td><td><a href="forms/mmg/formb.pdf" target="_blank">View</a> / <a href="forms/mmg/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>MMG Form C</td><td><a href="forms/mmg/formc.pdf" target="_blank">View</a> / <a href="forms/mmg/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="finance" class="tab-content">
+  <h2>Finance</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>Finance Form A</td><td><a href="forms/finance/forma.pdf" target="_blank">View</a> / <a href="forms/finance/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>Finance Form B</td><td><a href="forms/finance/formb.pdf" target="_blank">View</a> / <a href="forms/finance/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>Finance Form C</td><td><a href="forms/finance/formc.pdf" target="_blank">View</a> / <a href="forms/finance/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="security" class="tab-content">
+  <h2>Security</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>Security Form A</td><td><a href="forms/security/forma.pdf" target="_blank">View</a> / <a href="forms/security/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>Security Form B</td><td><a href="forms/security/formb.pdf" target="_blank">View</a> / <a href="forms/security/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>Security Form C</td><td><a href="forms/security/formc.pdf" target="_blank">View</a> / <a href="forms/security/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="tcp" class="tab-content">
+  <h2>TCP & HR</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>TCP & HR Form A</td><td><a href="forms/tcp/forma.pdf" target="_blank">View</a> / <a href="forms/tcp/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>TCP & HR Form B</td><td><a href="forms/tcp/formb.pdf" target="_blank">View</a> / <a href="forms/tcp/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>TCP & HR Form C</td><td><a href="forms/tcp/formc.pdf" target="_blank">View</a> / <a href="forms/tcp/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="tirc" class="tab-content">
+  <h2>TIRC</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>TIRC Form A</td><td><a href="forms/tirc/forma.pdf" target="_blank">View</a> / <a href="forms/tirc/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>TIRC Form B</td><td><a href="forms/tirc/formb.pdf" target="_blank">View</a> / <a href="forms/tirc/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>TIRC Form C</td><td><a href="forms/tirc/formc.pdf" target="_blank">View</a> / <a href="forms/tirc/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<div id="mt" class="tab-content">
+  <h2>MT</h2>
+  <table>
+    <tr><th>Serial No.</th><th>Title</th><th>Action</th></tr>
+    <tr><td>1</td><td>MT Form A</td><td><a href="forms/mt/forma.pdf" target="_blank">View</a> / <a href="forms/mt/forma.pdf" download>Download</a></td></tr>
+    <tr><td>2</td><td>MT Form B</td><td><a href="forms/mt/formb.pdf" target="_blank">View</a> / <a href="forms/mt/formb.pdf" download>Download</a></td></tr>
+    <tr><td>3</td><td>MT Form C</td><td><a href="forms/mt/formc.pdf" target="_blank">View</a> / <a href="forms/mt/formc.pdf" download>Download</a></td></tr>
+  </table>
+</div>
+
+<!-- Tab switcher script -->
+<script>
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.style.display = 'none');
+    document.getElementById(tabId).style.display = 'block';
+  }
+
+  // Show first tab on load
+  window.onload = () => showTab('qrs');
+</script>
+
+</body>
+</html>
